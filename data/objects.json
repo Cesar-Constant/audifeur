@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Peste noire",
+    "description": "Purge kick tous les gens du serv, sauf les admins.",
+    "chance": 0.01,
+    "url": "images/plague.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Ceinture explosive",
+    "description": "Kick l'utilisateur de la ceinture explosive + 2 personnes aléatoires.",
+    "chance": 2,
+    "url": "images/belt.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Caillou",
+    "description": "Sert à rien, mais peut être lancé.",
+    "chance": 50,
+    "url": "images/rock.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Feur",
+    "description": "Sert à rien, juste à rien.",
+    "chance": 30,
+    "url": "images/monalisa.png"
+  },
+  {
+    "id": 5,
+    "name": "Glock",
+    "description": "Permet de kicke un membre quand utilisé avec une munition.",
+    "chance": 5,
+    "url": "images/glock.png"
+  },
+  {
+    "id": 6,
+    "name": "Munition (Glock)",
+    "description": "Nécessaire à l'utilisation du glock.",
+    "chance": 10,
+    "url": "images/ammo.png"
+  },
+  {
+    "id": 7,
+    "name": "Ravus !",
+    "description": "Crie RRRAAVUUUUUUS dans les dm de quelqu'un au hasard",
+    "chance": 0.2,
+    "url": "images/ravus.png"
+  }
+]
