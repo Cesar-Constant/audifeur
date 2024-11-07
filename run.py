@@ -1,7 +1,12 @@
 import discord
 from discord.ext import commands
+from classes.objects.Mutition import Munition
+from classes.objects.Feur import Feur
+from classes.objects.Caillou import Caillou
+from classes.Bot import Bot
+from classes.User import User
 
-from func import loot, generateInventory, showInventory, useItem, ravus, kickUser
+from func import ravus
 
 
 intents = discord.Intents.all()
@@ -11,20 +16,20 @@ bot = commands.Bot(command_prefix='/', intents=intents)
 
 @bot.command(name='loot', description='Fouille les poubelles comme un clochard pour essayer de te sortir de ta vie de merde. Enculé !')
 async def lootCommand(ctx):
-    l = loot(ctx.author.id)
+    l = User.loot(ctx.author.id)
     await ctx.reply(embed=l['embed'], file=l['file'])
 
 @bot.command(name='generate')
 async def generateInventoryCommand(ctx):
-    await generateInventory(bot)
+    await User.generateInventory(bot)
 
 @bot.command(name='inventory')
 async def showInventoryCommand(ctx):
-    await ctx.reply(embed=showInventory(ctx.author.id))
+    await ctx.reply(embed=Bot.showInventory(ctx.author.id))
 
 @bot.command(name='use')
 async def useItemCommand(ctx):
-    l = await useItem(ctx, bot)
+    l = await User.useItem(ctx, bot)
     await ctx.reply(embed=l['embed'])
 
 
